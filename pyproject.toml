@@ -17,7 +17,7 @@ mh='my_history.cli:cmd'
 test  = "pytest"
 ctest = "pytest --cov"
 stest = "pytest -s"
-giti = "pip install git+https://github.com/GITSangWoo/my_history.git@v0.2.0/agrp
+giti = "pip install git+https://github.com/GITSangWoo/my_history.git@v0.2.0/agrp"
 
 [tool.pdm]
 distribution = true  
