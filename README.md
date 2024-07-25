@@ -35,5 +35,5 @@ $ pdm add -DG test pytest pytest-cov
 
 ### ref
 ```
-https://pdm-project.org/en/latest/usage/dependency/
+pip install git+https://github.com/GITSangWoo/my_history.git
 ```
