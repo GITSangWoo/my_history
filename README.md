@@ -1,7 +1,7 @@
 # mah
 - parquet 파일의 정보를 cli 기반으로 조회
 
-## 사용법
+### 사용법
 ```
 $ my-history -s ls
 ls 사용 횟수는 1234회 입니다.
@@ -20,30 +20,32 @@ mkdir 1932
    rm 1104
 ```
 
-### Dev env setting 
-
+### dev env setting
 ```
 $ git clone <URL>
-$ cd <PJT_NAME> 
-$ pdm install 
-$ [pdm test|pytest]
-
+$ cd <PJT_NAME>
+$ pyenv virtualenv 3.11.9 clean 
+$ pyenv global clean 
+$ rm -rf .venv
+$ pdm venv create
+$ source .venv/bin/activate
+$ pdm install
+$ pdm list
+$ pytest
 
 # option
-$ pdm add -DG test pytest pytest-cov
+$ pdm add -dG test pytest pytest-cov
 ```
+
 ### deploy
-branch
 ```bash
-pip install git+https://github.com/GITSangWoo/my_history.git@0.2.0
-```
-main
-```bash
-$pip install git+https://github.com/GITSangWoo/my_history.git 
+# dev branch
+$ pip install git+https://github.com/dMario24/mah.git@0.2.0/args
+
+# main
+$ pip install git+https://github.com/dMario24/mah.git@main
 ```
 
 ### ref
-```
-pdm add https://github.com/GITSangWoo/my_history.git
-pip install git+https://github.com/GITSangWoo/my_history.git
-```
+- https://pdm-project.org/en/latest/usage/dependency/#add-development-only-dependencies
+
