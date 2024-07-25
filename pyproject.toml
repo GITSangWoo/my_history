@@ -22,9 +22,8 @@ test = [
     "pytest-cov>=5.0.0",
 ]
 
-
-[project.url]
-Homepage = https://github.com/GITSangWoo/my_history/tree/main
-Issues = https://github.com/GITSangWoo/my_history/issues
+[project.urls]
+Homepage = "https://github.com/GITSangWoo/my_history/tree/main"
+Issues = "https://github.com/GITSangWoo/my_history/issues"
 
 
