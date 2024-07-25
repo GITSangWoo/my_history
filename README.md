@@ -19,6 +19,22 @@ mkdir 1932
   pdm 1220
    rm 1104
 ```
+
+```
+$mh -t 10 -d 2024-07-17 -p
+-------  ----
+git      2269
+cd       1301
+cat       906
+pyenv     681
+vi        655
+mkdir     479
+rm        446
+history   403
+tail      351
+sudo      325
+
+```
 $ git clone <URL>
 $ cd <PJT_NAME>
 $ pyenv virtualenv 3.11.9 clean 
@@ -49,10 +65,10 @@ $ pytest
 ### deploy
 ```bash
 # dev branch
-$ pip install git+https://github.com/dMario24/mah.git@0.2.0/args
+$ pip install git+https://github.com/GITSangWoo/mah.git@0.2.0/args
 
 # main
-$ pip install git+https://github.com/dMario24/mah.git@main
+$ pip install git+https://github.com/GITSangWoo/mah.git@main
 ```
 
 ### ref
