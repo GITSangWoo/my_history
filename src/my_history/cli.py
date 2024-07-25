@@ -1,7 +1,7 @@
 import pandas as pd
 import argparse 
 
-def helllo_msg():
+def hello_msg():
     return "hello"
 
 def cmd():
