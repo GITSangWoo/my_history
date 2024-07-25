@@ -32,8 +32,18 @@ $ [pdm test|pytest]
 # option
 $ pdm add -DG test pytest pytest-cov
 ```
+### deploy
+branch
+```bash
+$pip install git+https://github.com/GITSangWoo/my_history/tree/v0.2.0/argp
+```
+main
+```bash
+$pip install git+https://github.com/GITSangWoo/my_history.git 
+```
 
 ### ref
 ```
+pdm add https://github.com/GITSangWoo/my_history.git
 pip install git+https://github.com/GITSangWoo/my_history.git
 ```
