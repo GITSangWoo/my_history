@@ -30,8 +30,9 @@ def cmd():
             # TODO 특정 날짜의 명령어 TOP N
         else:
             print(f"TODO - 에러나 안내 메시지를 주면")
+            parser.print_help()
     else:
         parser.print_help()
-        # TODO - t아용법을 출력한다. 
+        # TODO - 아용법을 출력한다. 
 
 
