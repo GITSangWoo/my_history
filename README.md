@@ -35,7 +35,7 @@ $ pdm add -DG test pytest pytest-cov
 ### deploy
 branch
 ```bash
-$pip install git+https://github.com/GITSangWoo/my_history/tree/v0.2.0/argp
+pip install git+https://github.com/GITSangWoo/my_history.git@0.2.0
 ```
 main
 ```bash

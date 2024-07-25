@@ -11,7 +11,7 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [project.scripts]
-mh='my_history.cli:query'
+mh='my_history.cli:cmd'
 
 [tool.pdm]
 distribution = true  
@@ -21,3 +21,10 @@ test = [
     "pytest>=8.3.1",
     "pytest-cov>=5.0.0",
 ]
+
+
+[project.url]
+Homepage = https://github.com/GITSangWoo/my_history/tree/main
+Issues = https://github.com/GITSangWoo/my_history/issues
+
+
