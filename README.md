@@ -19,9 +19,6 @@ mkdir 1932
   pdm 1220
    rm 1104
 ```
-
-### dev env setting
-```
 $ git clone <URL>
 $ cd <PJT_NAME>
 $ pyenv virtualenv 3.11.9 clean 
@@ -32,10 +29,22 @@ $ source .venv/bin/activate
 $ pdm install
 $ pdm list
 $ pytest
+pytest
+======================== test session starts ========================
+platform linux -- Python 3.11.9, pytest-8.3.1, pluggy-1.5.0
+rootdir: /home/diginori/code/mah
+configfile: pyproject.toml
+plugins: cov-5.0.0
+collected 0 items
+
+======================= no tests ran in 0.01s =======================
 
 # option
+$ pdm init
+$ pdm venv create
+$ source .venv/bin/activate
 $ pdm add -dG test pytest pytest-cov
-```
+$ pytest
 
 ### deploy
 ```bash
@@ -48,4 +57,5 @@ $ pip install git+https://github.com/dMario24/mah.git@main
 
 ### ref
 - https://pdm-project.org/en/latest/usage/dependency/#add-development-only-dependencies
+- https://stackoverflow.com/questions/10253826/path-issue-with-pytest-importerror-no-module-named
 
