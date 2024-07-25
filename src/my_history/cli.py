@@ -31,7 +31,7 @@ def read_parquet(path="~/tmp/history.parquet"):
     return df
 
 
-def query(command=args.count):
+def query():
         q = args.count
         i = cnt(q)
         print('질의:%s에 대한 결과는 %d입니다' %(q,i))
