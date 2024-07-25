@@ -1,35 +1,33 @@
+import argparse
+
 def hello_msg():
     return "hello"
 
 def cmd():
     msg = hello_msg()
-    print(msg)
-
+   #  print(msg)
     
-# parser = argparse.ArgumentParser(description='print command count')
-# parser.add_argument('-s','--count',action='store', help ='print counting insist command')
-# parser.add_argument('-t','--countall',action='store', help='printing all commands count')
-# parser.add_argument('-d','--date', action='store_true',help='Date you want')
+    parser = argparse.ArgumentParser(
+                    prog='ProgramName',
+                    description='What the program does',
+                    epilog='Text at the bottom of help')
 
-# args = parser.parse_args()
-# def cnt(q):
- #   df = read_parquet()
- #   df = pd.read_parquet("~/tmp/history.parquet") 
- #   df['dt'] = df['dt'].str.replace('^', '')
-  #  df['cmd'] = df['cmd'].str.replace('^', '')
-   # df['cnt'] = df['cnt'].str.replace('^', '')
-  #  df['cnt'] = df['cnt'].astype(int)
-  #  fdf = df[df['cmd'].str.contains(q)]
-  #  cnt = fdf['cnt'].sum()
-  #  return cnt
+    parser.add_argument('-s','--scount')
+    parser.add_argument('-t', '--top') 
+    parser.add_argument('-d', '--dt') 
+    
 
-# def read_parquet(path="~/tmp/history.parquet"):
-   # df = pd.read_parquet(path)
-   # return df
+    args = parser.parse_args()
+    print(args.scount, args.top, args.dt)
+
+    if args.scount:
+        print(f"-s => {args.scount}")
+    elif args.top:
+        print(f"-t => {args.top}")
+        if args.dt: 
+            print(f"-d => {args.dt}")
+        else:
+            print(f"TODO")
 
 
-#def query():
-#        q = args.count
- #       i = cnt(q)
-  #      print('질의:%s에 대한 결과는 %d입니다' %(q,i))
 

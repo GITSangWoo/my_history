@@ -1,12 +1,25 @@
 import pandas as pd
 import argparse 
 
-parser = argparse.ArgumentParser(description='print command count')
-parser.add_argument('-s','--count',action='store', help ='print counting insist command')
-parser.add_argument('-t','--countall',action='store', help='printing all commands count')
-parser.add_argument('-d','--date', action='store',help='Date you want')
 
-args = parser.parse_args()
+def cmd():
+    msg = hello_msg()
+    print(msg)
+
+    parser = argparse.ArgumentParser(
+                    prog='ProgramName',
+                    description='What the program does',
+                    epilog='Text at the bottom of help')
+
+    parser.add_argument('-c', '--count',action='store')      # option that takes a value
+    parser.add_argument('-t', '--tail',action='store')      # option that takes a value
+    parser.add_argument('-d', '--date', action='store')  # on/off flag     
+    args = parser.parse_args()
+    
+    if  
+
+
+
 
 def query(command):
         q = command 
