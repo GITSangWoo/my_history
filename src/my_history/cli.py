@@ -3,13 +3,11 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='print command count')
-parser.add_argument('-s','--count',action='store_true', help ='print counting insist command')
+parser.add_argument('-s','--count',action='store', help ='print counting insist command')
 parser.add_argument('-t','--countall',action='store', help='printing all commands count')
 parser.add_argument('-d','--date', action='store_true',help='Date you want')
 
 args = parser.parse_args()
-print(
-
 def cnt(q):
     df = read_parquet()
     df = pd.read_parquet("~/tmp/history.parquet") 
@@ -17,7 +15,7 @@ def cnt(q):
     df['cmd'] = df['cmd'].str.replace('^', '')
     df['cnt'] = df['cnt'].str.replace('^', '')
     df['cnt'] = df['cnt'].astype(int)
-    fdf = df[df['cmd'].str.contains(count)]
+    fdf = df[df['cmd'].str.contains(q)]
     cnt = fdf['cnt'].sum()
     return cnt
 
@@ -26,8 +24,16 @@ def read_parquet(path="~/tmp/history.parquet"):
     return df
 
 
-def query(args.count):
-    q = args.count
-    i = cnt(q)
-    print(f'질의:{q}에 대한 결과는 {i}입니다')
-    print('질의:%s에 대한 결과는 %d입니다' %(q,i))
+def query(command=args.count):
+    
+    parser = argparse.ArgumentParser(description='print command count')
+    parser.add_argument('-s','--count',action='store', help ='print counting insist command')
+    parser.add_argument('-t','--countall',action='store', help='printing all commands count')
+    parser.add_argument('-d','--date', action='store_true',help='Date you want')
+    
+    if q = true : 
+        q = args.count
+        i = cnt(q)
+        print('질의:%s에 대한 결과는 %d입니다' %(q,i))
+    else 
+
