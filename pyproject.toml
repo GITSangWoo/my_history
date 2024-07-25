@@ -13,6 +13,12 @@ license = {text = "MIT"}
 [project.scripts]
 mh='my_history.cli:cmd'
 
+[tool.pdm.scripts]
+test  = "pytest"
+ctest = "pytest --cov"
+stest = "pytest -s"
+
+
 [tool.pdm]
 distribution = true  
 
