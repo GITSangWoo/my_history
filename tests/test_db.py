@@ -1,4 +1,4 @@
-from mah.db.utils import read_data
+from my_history.db.utils import read_data
 import pandas as pd
 
 def test_read_data():
